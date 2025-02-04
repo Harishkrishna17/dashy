@@ -58,3 +58,8 @@ appConfig:
   theme: glass
   layout: auto
   iconSize: medium
+  auth:
+    users:
+    - user: harish
+      hash: 7f3f6d4d1d43f9b3f0fbd546f7c0672ee31f8537c0e9dcf4836eb8df08def52b
+      type: admin
