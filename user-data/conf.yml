@@ -1,65 +1,107 @@
 pageInfo:
   title: Harish
+
 sections:
-  - name: Dev
+  - name: ArgoCD
     items:
-      - title: Prod-Cluster
-        description: Source code and documentation on GitHub
+      - title: ArgoCD Core
+        description: ArgoCD Core Environment
+        icon: fas fa-code-branch
+        url: https://argocd-core.talview.org/
+      - title: ArgoCD Delivery
+        description: ArgoCD Delivery Environment
+        icon: fas fa-code-branch
+        url: http://argocd-delivery.talview.org/
+      - title: ArgoCD Proview
+        description: ArgoCD Proview Environment
+        icon: fas fa-code-branch
+        url: https://argocd-proview.talview.org/
+      - title: ArgoCD AU
+        description: ArgoCD AU Environment
+        icon: fas fa-code-branch
+        url: https://argocd-au.talview.org/
+      - title: Argo Rollouts Core
+        description: Argo Rollouts Core Environment
+        icon: fas fa-code-branch
+        url: http://argorollouts-core.talview.org/
+      - title: Argo Rollouts Proview
+        description: Argo Rollouts Proview Environment
+        icon: fas fa-code-branch
+        url: http://argorollouts-proview.talview.org/
+
+  - name: Monitoring
+    items:
+      - title: Grafana Core Dashboard
+        description: Core Services Monitoring
+        icon: https://grafana.com/static/img/menu/grafana2.svg
+        url: https://grafana.talview.com/goto/HnjU15FHg?orgId=1
+      - title: Grafana Livekit Dashboard
+        description: Livekit Services Monitoring
+        icon: https://grafana.com/static/img/menu/grafana2.svg
+        url: https://grafana.talview.com/goto/zAn_J5FHg?orgId=1
+      - title: Pagerduty
+        description: Incident Management
+        icon: fas fa-bell
+        url: https://talview.pagerduty.com/
+
+  - name: Development
+    items:
+      - title: Prod Cluster Issues
+        description: GitHub Issues for Production Cluster
         icon: fab fa-github
         url: https://github.com/talview/prod-cluster/issues
-        id: 0_287_prodcluster
-      - title: Dev-Cluster
-        description: Dev cluster issues
-        icon: fas fa-bug
+      - title: Dev Cluster Issues
+        description: GitHub Issues for Development Cluster
+        icon: fab fa-github
         url: https://github.com/talview/dev-cluster/issues
-        id: 1_287_devcluster
-      - title: AWS-PROD
-        description: prouction aws account
-        icon: far fa-rocket
-        url: >-
-          https://talview.awsapps.com/start/#/console?account_id=494571397023&role_name=AdministratorAccess&referrer=accessPortal
-        id: 2_287_awsprod
-      - title: AWS-DEV
-        description: dev aws account
-        icon: far fa-rocket
-        url: >-
-          https://talview.awsapps.com/start/#/console?account_id=789111362810&role_name=AdministratorAccess&referrer=accessPortal
-        id: 3_287_awsdev
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-  - name: Prod
+      - title: Prod Cluster PRs
+        description: GitHub Pull Requests for Production Cluster
+        icon: fab fa-github
+        url: https://github.com/talview/prod-cluster/pulls
+      - title: Dev Cluster PRs
+        description: GitHub Pull Requests for Development Cluster
+        icon: fab fa-github
+        url: https://github.com/talview/dev-cluster/pulls
+
+  - name: Services
     items:
-      - title: Grafana-Livekit
-        icon: favicon
-        url: >-
-          https://grafana.talview.com/d/aea59lm82dc00e/livekit?orgId=1&from=now-30m&to=now&timezone=browser&refresh=5s
-        id: 0_405_grafanalivekit
-      - title: Grafana-Core
-        icon: https://play.grafana.org/public/img/grafana_icon.svg
-        url: >-
-          https://grafana.talview.com/d/ba0a3f7e-c566-4479-a0b9-e1a943d679bd/core?orgId=1&from=now-30m&to=now&timezone=browser&refresh=5s
-        id: 1_405_grafanacore
-      - title: grafana-dev
-        icon: https://play.grafana.org/public/img/grafana_icon.svg
-        url: https://grafana-dev.talview.org/
-        target: newtab
-        id: 2_405_grafanadev
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
+      - title: Livekit
+        description: Livekit Cloud Dashboard
+        icon: fas fa-video
+        url: https://cloud.livekit.io/
+      - title: Amnic
+        description: Amnic Dashboard
+        icon: fas fa-chart-line
+        url: https://app.amnic.com/
+      - title: Azure
+        description: Azure Portal
+        icon: fab fa-microsoft
+        url: https://portal.azure.com/#settings/directory
+
+  - name: Instarails
+    items:
+      - title: Dev Console
+        description: AWS Dev Console
+        icon: fab fa-aws
+        url: https://692859916396.signin.aws.amazon.com/console
+      - title: Legacy Console
+        description: AWS Legacy Console
+        icon: fab fa-aws
+        url: https://794175882760.signin.aws.amazon.com/console
+      - title: Secureframe
+        description: Security and Compliance
+        icon: fas fa-shield-alt
+        url: https://app.secureframe.com/
+      - title: DevOps
+        description: DevOps Repository
+        icon: fab fa-github
+        url: https://github.com/instarails/IRDevops
+      - title: Grafana
+        description: Instarails Grafana
+        icon: https://grafana.com/static/img/menu/grafana2.svg
+        url: https://instarails.grafana.net/login
+
 appConfig:
   theme: glass
   layout: auto
   iconSize: medium
-  auth:
-    users:
-    - user: harish
-      hash: 7f3f6d4d1d43f9b3f0fbd546f7c0672ee31f8537c0e9dcf4836eb8df08def52b
-      type: admin
